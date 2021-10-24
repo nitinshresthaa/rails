@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.1'
+ruby '2.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -20,7 +20,7 @@ gem 'jbuilder', '~> 2.7'
 
 # Pagination
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
-gem 'bootstrap-will_paginate', '~> 1.0'
+gem 'will_paginate-bootstrap-style'
 
 # Bootstrap sass
 
@@ -68,3 +68,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "faker", "~> 2.19"
