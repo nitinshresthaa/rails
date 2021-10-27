@@ -12,6 +12,6 @@ end
   Article.create!(
     title: Faker::Book.title,
     description: Faker::Lorem.paragraphs(number: 3).join('<br />'),
-    user_id: User.all.sample.id
+    user_id: User.all.sample.id,
   )
 end
